@@ -1,126 +1,242 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Micah Lamb's Resume</title>
-	<style>
-		h1, h2, .contact {
-			text-align: center;
-		}
-		
-		h3 > div {
-			float: right;
-			font-weight: normal;
-		}
-		
-		h4 {
-			margin: 1em 0 .5em 0;
-		}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micah Lamb's Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        color: #333;
+      }
 
-		li {
-			margin-bottom: 5px;
-		}
-	</style>
-</head>
-<body>
-	<section>
-		<h1>Micah Lamb</h1>
-		<div class='contact'>
-			740-407-7509 • micah.d.lamb@gmail.com
-		</div>
-	</section>
-	<section class='education'>
-		<h2>Education</h2>
-		<ul>
-			<li>
-				<h3>Udacity Nanodegrees</h3>
-				<div>Deep Learning (Apr 2020), Computer Vision (Aug 2020), Natural Language Processing (Nov 2020)</div>
-			</li>
-			<li>
-				<h3>The Ohio State University - <small>Columbus, Ohio</small></h3>
-				<div>M.S. Computer Science 5/2013<!--, GPA: 3.77/4--> - <small>Specialized in Computer Graphics</small></div>
-			</li>
-			<li>
-				<h3>Ohio University - <small>Athens, Ohio</small></h3>
-				<div>B.S. Computer Science 6/2008</div>
-			</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Summary of Qualifications</h2>
-		<ul>
-			<li>
-				<h4>Extensive Experience in Full Stack Development</h4>
-				Proficient in a variety of server languages including ColdFusion, PHP, Ruby, Node JS, Java, and Python. Familiar with databases such as MySQL, SQL Server, Oracle, MongoDB and JavaScript frameworks like ReactJS.
-			</li>
-			<li>
-				<h4>Data Visualization & Machine Learning</h4>
-				Skilled in the SciPy ecosystem, PyTorch, and Keras for data visualization and machine learning model development.
-			</li>
-			<li>
-				<h4>End-to-End Development in Leading CAD Software</h4>
-				Core developer on Inspire Motion from its inception through multiple release cycles. It is in use at major manufacturers worldwide with broad application across industries such as automotive, heavy equipment, and aerospace.
-			</li>
-			<li>
-				<h4>Global Web Application Deployment</h4>
-				Engineered a web application adopted by over 500 warehouses worldwide for document storage, retrieval, and signing.
-			</li>
-			<li>
-				<h4>Computer Graphics Expertise</h4>
-				Adept in OpenGL/GLSL and linear algebra, showcasing a strong foundation in computer graphics.
-			</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Professional Experience</h2>
-		<ul>
-			<li>
-				<h3>Software Developer at Altair Engineering<div>Oct 2013 - Feb 2018</div></h3>
-				<ul>
-					<li>
-						Collaborated with engineers to develop a multibody dynamics plugin for <a href='https://altair.com/inspire'>Inspire</a> that has become an integral part of the platform.
-						It allows manufacturers to design and analyze the motion of mechanisms.
-						Simulation results are visualized as animations and plots.
-						The computed forces are fed into subsequent structural analyses, such as shape optimization.
-					</li>
-					<li>
-						Developed the foundational Python library underpinning Inspire Motion and a suite of other manufacturing plugins for Casting, 3D Printing, <a href="https://altair.com/product-showcase#search=inspire">...</a>
-						It enables extending the C++ data model with new entities in Python plus all the UI to visualize and edit them in the graphics window and other views.
-						Wrapped core APIs to be more pythonic and much simpler to use.
-						Added sphinx documentation and demos to support customer usage to build company specific customizations.
-					</li>
-					<li>
-						Created/maintained the test suite for all of Inspire using pytest. Leveraged Jenkins for compiling and executing tests post-commit.
-					</li>
-				</ul>
-			</li>
-			<li>
-				<h3>Team Lead at Altair Engineering<div>Nov 2020 - Present</div></h3>
-				<ul>
-					<li>Continued development on Inspire...</li>
-					<li>Prototyped solutions for new features and devised actionable sub-tasks for other team members to carry forward the development.</li>
-					<li>Provided mentorship and code oversight for the team, especially the newer developers.</li>
-					<li>Developed a graphics library to simplify drawing entities, animations, and build manipulator tools. Achieved a 20x+ reduction in user code compared to the previous implementation and significantly improved performance.</li>
-					<li>Company SWIG expert and maintainer of the build process generating Python bindings for all public C++ APIs.</li>
-				</ul>
-			</li>
-			<li>
-				<h3>Web Developer and DevOps Engineer at DHL<div>Feb 2018 - Nov 2020</div></h3>
-				<ul>
-					<li>
-						Developed a React & Java-based document management system (eDOC) as part of the DHL Go Green Initiative, aiming to eliminate all paper usage by 2030. Received a provisional patent for an original contactless document signing process.
-					</li>
-					<li>
-						Transitioned a diverse suite of web applications and background processes from VM hosting to a new containerized infrastructure (Openshift) with continuous integration.
-					</li>
-					<li>
-						Analyzed shipping data to create a machine learning model capable of forecasting seasonal shipping rates and delivery times with reasonable accuracy.
-					</li>
-					<li>
-						Pioneered a project to automate warehouse software + configuration testing through Python scripts. Utilized Selenium to navigate the warehouse management website and telnet to simulate scanning RF devices. This proof of concept was expanded upon by others, eventually replacing a team of QA testers.
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-</body>
+      h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+        margin-top: 30px;
+      }
+
+      h3 {
+        clear: both;
+      }
+
+      h3 > div {
+        float: right;
+        font-weight: normal;
+      }
+
+      h4 {
+        margin: 1em 0 0.5em 0;
+        color: #444;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      ul.bullets li {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eaeaea; /* subtle border for separation */
+      }
+
+      .contact {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      small {
+        font-weight: normal;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <h1>Micah Lamb</h1>
+      <div class="contact">740-407-7509 • micah.d.lamb@gmail.com</div>
+    </section>
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>Udacity Nanodegrees</h3>
+          <div>
+            Deep Learning (Apr 2020), Computer Vision (Aug 2020), Natural
+            Language Processing (Nov 2020)
+          </div>
+        </li>
+        <li>
+          <h3>The Ohio State University - <small>Columbus, Ohio</small></h3>
+          <div>
+            M.S. Computer Science 5/2013<small>
+              - Specialized in Computer Graphics</small
+            >
+          </div>
+        </li>
+        <li>
+          <h3>Ohio University - <small>Athens, Ohio</small></h3>
+          <div>B.S. Computer Science 6/2008</div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Summary of Qualifications</h2>
+      <ul>
+        <li>
+          <h4>Extensive Experience in Full Stack Development</h4>
+          Proficient in a variety of server languages including ColdFusion, PHP,
+          Ruby, Node JS, Java, and Python. Familiar with databases such as
+          MySQL, SQL Server, Oracle, MongoDB and JavaScript frameworks like
+          ReactJS.
+        </li>
+        <li>
+          <h4>Data Visualization & Machine Learning</h4>
+          Skilled in the SciPy ecosystem, PyTorch, and Keras for data
+          visualization and machine learning model development.
+        </li>
+        <li>
+          <h4>End-to-End Development in Leading CAD Software</h4>
+          Core developer on Inspire Motion from its inception through multiple
+          release cycles. It is in use at major manufacturers worldwide with
+          broad application across industries such as automotive, heavy
+          equipment, and aerospace.
+        </li>
+        <li>
+          <h4>Global Web Application Deployment</h4>
+          Engineered a web application adopted by over 500 warehouses worldwide
+          for document storage, retrieval, and signing.
+        </li>
+        <li>
+          <h4>Computer Graphics Expertise</h4>
+          Adept in OpenGL/GLSL and linear algebra, showcasing a strong
+          foundation in computer graphics.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Professional Experience</h2>
+      <ul>
+        <li>
+          <h3>
+            Software Developer at Altair Engineering
+            <div>Oct 2013 - Feb 2018</div>
+          </h3>
+          <ul class="bullets">
+            <li>
+              Collaborated with engineers to develop a multibody dynamics plugin
+              for <a href="https://altair.com/inspire">Inspire</a> that has
+              become an integral part of the platform. It allows manufacturers
+              to design and analyze the motion of mechanisms. Simulation results
+              are visualized as animations and plots. The computed forces are
+              fed into subsequent structural analyses, such as shape
+              optimization.
+            </li>
+            <li>
+              Developed the foundational Python library underpinning Inspire
+              Motion and a suite of other manufacturing plugins for Casting, 3D
+              Printing,
+              <a href="https://altair.com/product-showcase#search=inspire"
+                >...</a
+              >
+              It enables extending the C++ data model with new entities in
+              Python plus all the UI to visualize and edit them in the graphics
+              window and other views. Wrapped core APIs to be more pythonic and
+              much simpler to use. Added sphinx documentation and demos to
+              support customer usage to build company specific customizations.
+            </li>
+            <li>
+              Created/maintained the test suite for all of Inspire using pytest.
+              Leveraged Jenkins for compiling and executing tests post-commit.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>
+            Team Lead at Altair Engineering
+            <div>Nov 2020 - Present</div>
+          </h3>
+          <ul class="bullets">
+            <li>Continued development on Inspire...</li>
+            <li>
+              Prototyped solutions for new features and devised actionable
+              sub-tasks for other team members to carry forward the development.
+            </li>
+            <li>
+              Provided mentorship and code oversight for the team, especially
+              the newer developers.
+            </li>
+            <li>
+              Developed a graphics library to simplify drawing entities,
+              animations, and build manipulator tools. Achieved a 20x+ reduction
+              in user code compared to the previous implementation and
+              significantly improved performance.
+            </li>
+            <li>
+              Company SWIG expert and maintainer of the build process generating
+              Python bindings for all public C++ APIs.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>
+            Web Developer and DevOps Engineer at DHL
+            <div>Feb 2018 - Nov 2020</div>
+          </h3>
+          <ul class="bullets">
+            <li>
+              Developed a React & Java-based document management system (eDOC)
+              as part of the DHL Go Green Initiative, aiming to eliminate all
+              paper usage by 2030. Received a provisional patent for an original
+              contactless document signing process.
+            </li>
+            <li>
+              Transitioned a diverse suite of web applications and background
+              processes from VM hosting to a new containerized infrastructure
+              (Openshift) with continuous integration.
+            </li>
+            <li>
+              Analyzed shipping data to create a machine learning model capable
+              of forecasting seasonal shipping rates and delivery times with
+              reasonable accuracy.
+            </li>
+            <li>
+              Pioneered a project to automate warehouse software + configuration
+              testing through Python scripts. Utilized Selenium to navigate the
+              warehouse management website and telnet to simulate scanning RF
+              devices. This proof of concept was expanded upon by others,
+              eventually replacing a team of QA testers.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>
